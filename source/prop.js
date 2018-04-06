@@ -19,6 +19,7 @@ import path from './path';
  *
  *      R.prop('x', {x: 100}); //=> 100
  *      R.prop('x', {}); //=> undefined
+ *      ['Elephant', 'Penguin'].map(R.prop('length')) //=> [8, 7]
  */
 
 var prop = _curry2(function prop(p, obj) { return path([p], obj); });
